@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title>Rock Paper Scissors!</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron text-center">
+			<h1>Rock Paper Scissors!</h1>
+		</div>
+
+		<!-- Player picks name -->
+		<div class="row" id="pick-name">
+
+			<div class="col-md-3 text-center">
+			</div>
+
+			<div class="col-md-1 text-center">
+				<button  id="create-player">Play!</button>
+			</div>
+
+			<div class="col-md-5">
+				<input placeholder="Pick a name!" id="name"></input>
+			</div>
+
+			<div class="col-md-3 text-center">
+			</div>
+
+		</div>
+
+		<!-- The two user views and outcome columns -->
+		<div class="row">
+
+			<div class="col-md-4 text-center">
+				<div class="player-window" id="1-window">
+					<h3 id="player1-name">Player 1</h3>
+				</div>
+
+				<div class="player-window" id="choose-1">
+					<h3 id="player1-name-choose">Doop</h3>
+					<button id="rock1">Rock</button><br>
+					<button id="paper1">Paper</button><br>
+					<button id="scissors1">Scissors</button>
+					<p id="player1-stats"></p>
+				</div>
+
+			</div>
+
+			<!-- Window for player1 to pick rock, paper, or scissors -->
+
+			<div class="col-md-4 text-center">
+				<div class="player-window" id="outcome">
+					<h3>Outcome</h3>
+					<h2 id="result"></h2>
+				</div>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<div class="player-window" id="2-window">
+					<h3 id="player2-name">Player 2</h3>
+				</div>
+
+
+				<div class="player-window" id="choose-2">
+					<h3 id="player2-name-choose">Doop</h3>
+					<button id="rock2">Rock</button><br>
+					<button id="paper2">Paper</button><br>
+					<button id="scissors2">Scissors</button>
+					<p id="player2-stats"></p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Chat window -->
+
+		<div id="chat">
+			<div class="row">
+
+				<div class="col-md-12">
+					<div id="chat-window" class="pre-scrollable"></div>
+				</div>
+
+			</div>
+
+			<!-- User input for chat -->
+			<div class="row">
+
+				<div class="col-md-1 text-center">
+					<button  id="send-chat">Send</button>
+				</div>
+
+				<div class="col-md-11">
+					<input placeholder="Say something!" id="message"></input>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	
+
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/script.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet" />
+
+</body>
+</html>
